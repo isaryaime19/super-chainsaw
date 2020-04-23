@@ -1,0 +1,542 @@
+EFECTO DE AGRANDAR
+
+<style> 
+div {
+  width: 100px;
+  height: 100px;
+  background: red;
+  transition: width 2s, height 4s;
+}
+
+div:hover {
+  width: 300px;
+  height: 300px;
+}
+</style>
+
+CAMBIAR DE COLORES
+<style>
+div {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation-name: example;
+  animation-duration: 4s;
+}
+
+@keyframes example {
+  0%   {background-color: red;}
+  25%  {background-color: yellow;}
+  50%  {background-color: blue;}
+  100% {background-color: green;}
+}
+</style>
+
+CAMBIA DE COLORES MIENTRAS SE MUEVE
+<style> 
+div {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  animation-name: example;
+  animation-duration: 4s;
+}
+
+@keyframes example {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+</style>
+
+LO MISMO CON DELAY
+<style> 
+div {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-delay: 2s;
+}
+
+@keyframes example {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+</style>
+
+LO MISMO CON LA CANTIDAD DE VECES QUE DURA LA ANIMACION
+<style> 
+div {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: 3;
+}
+
+@keyframes example {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+</style>
+
+LO MISMO INFINITAS VECES
+<style> 
+div {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes example {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+
+ANIMACION EN REVERSA
+
+<style> 
+div {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-direction: reverse;  
+}
+
+@keyframes example {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+</style>
+
+ANIMACION ALTERNADA
+<style> 
+div {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: 2;
+  animation-direction: alternate;  
+}
+
+@keyframes example {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+</style>
+
+PARA DIVS QUE APAREZCAN DE FORMA LINEAL
+<style> 
+div {
+  width: 100px;
+  height: 50px;
+  background-color: red;
+  font-weight: bold;
+  position: relative;
+  animation: mymove 5s infinite;
+}
+
+#div1 {animation-timing-function: linear;}
+#div2 {animation-timing-function: ease;}
+#div3 {animation-timing-function: ease-in;}
+#div4 {animation-timing-function: ease-out;}
+#div5 {animation-timing-function: ease-in-out;}
+
+@keyframes mymove {
+  from {left: 0px;}
+  to {left: 300px;}
+}
+</style>
+
+VUELA UN ELEMENTO SOBRE LOS DEMAS Y SE POSICIONA AL FINAL
+
+<style> 
+div {
+  width: 100px;
+  height: 100px;
+  background: red;
+  position: relative;
+  animation-name: example;
+  animation-duration: 3s;  
+  animation-fill-mode: forwards;
+}
+
+@keyframes example {
+  from {top: 0px;}
+  to {top: 200px; background-color: blue;}
+}
+</style>
+
+LO MISMO PERO CAMBIA DE AMARILLO A AZUL
+<style> 
+div {
+  width: 100px;
+  height: 100px;
+  background: red;
+  position: relative;
+  animation-name: example;
+  animation-duration: 3s;  
+  animation-delay: 2s;
+  animation-fill-mode: both;
+}
+
+@keyframes example {
+  from {top: 0px; background-color: yellow;}
+  to {top: 200px; background-color: blue;}
+}
+</style>
+
+BACKGROUND ANIMATION'
+
+<style>
+p.a {
+  font: 15px Arial, sans-serif;
+}
+
+p.b {
+  font: italic small-caps bold 12px/30px Georgia, serif;
+}
+</style>
+
+<style> 
+#myDIV {
+  width: 300px;
+  height: 200px;
+  background: red;
+  animation: mymove 5s infinite;
+}
+
+@keyframes mymove {
+  50% {background-color: blue;}
+}
+</style>
+</head>
+<body>
+
+<h1>Animation of background-color</h1>
+
+<p>Gradually change the background-color from red to blue, and back to red:<p>
+<div id="myDIV"></div>
+
+<p><b>Note:</b> CSS Animations do not work in Internet Explorer 9 and earlier versions.</p>
+
+BACKGROUND SE MUEVE
+
+<style> 
+#myDIV {
+  width: 300px;
+  height: 200px;
+  border: 1px solid black;
+  background-image: url('smiley.gif');
+  background-position: top left;
+  animation: mymove 5s infinite;
+}
+
+@keyframes mymove {
+  50% {background-position: center;}
+}
+</style>
+</head>
+<body>
+
+<h1>Animation of background</h1>
+
+<p>Gradually change the background property:<p>
+<div id="myDIV"></div>
+
+<p>The background property is a shorthand property for all background properties.</p>
+<p>The background-color, background-position, and background-size properties are <em>animatable</em> in CSS.</p>
+<p><b>Note:</b> CSS Animations do not work in Internet Explorer 9 and earlier versions.</p>
+
+BACKGROUND SE AGRANDA
+<style> 
+#myDIV {
+  width: 300px;
+  height: 200px;
+  border: 1px solid black;
+  background-image: url('w3css.gif');
+  background-size: 20px 20px;
+  animation: mymove 5s infinite;
+}
+
+@keyframes mymove {
+  50% {background-size: 125px 125px;}
+}
+</style>
+
+TEXTO SE AGRANDA
+
+<style> 
+#myDIV {
+  border: 1px solid black;
+  width: 400px;
+  height: 100px;
+  animation: mymove 5s infinite;
+}
+
+@keyframes mymove {
+  50% {font: 40px bold;}
+}
+</style>
+<style> 
+#myDIV {
+  border: 1px solid black;
+  width: 400px;
+  height: 100px;
+  animation: mymove 5s infinite;
+}
+
+@keyframes mymove {
+  50% {font: 40px bold;}
+}
+</style>
+</head>
+<body>
+
+<h1>Animation of font</h1>
+
+<p>Gradually change the font property:<p>
+<div id="myDIV">
+  <p>This is a paragraph</p>
+</div>
+
+<p>The font property is a shorthand property for all font properties.</p>
+<p>font-size, font-weight, font-stretch, and line-height are <em>animatable</em> in CSS.</p>
+<p><b>Note:</b> CSS Animations do not work in Internet Explorer 9 and earlier versions.</p>
+
+LA LETRA VA CAMBIANDO DE COLOR
+<style> 
+#myDIV {
+  border: 1px solid black;
+  width: 300px;
+  color: red;
+  animation: mymove 5s infinite;
+}
+
+@keyframes mymove {
+  50% {color: blue;}
+}
+</style>
+</head>
+<body>
+
+<h1>Animation of color</h1>
+
+<p>Gradually change the color of the text from red to blue, then back:<p>
+
+<div id="myDIV">
+  <h1>This is a header</h1>
+  <p>This is a paragraph</p>
+</div>
+
+<p><b>Note:</b> CSS Animations do not work in Internet Explorer 9 and earlier versions.</p>
+
+ANIMACION DE OPACITY
+
+<style> 
+#myDIV {
+  position: absolute;
+  top: 200px;
+  width: 300px;
+  height: 150px;
+  background-color: lightblue;
+  border: 1px solid black;
+  animation: mymove 5s infinite;
+}
+
+#DIV2 {
+  position: absolute;
+  top: 180px;
+  left: 30px;
+  width: 300px;
+  height: 150px;
+  background-color: coral;
+  border: 1px solid black;
+}
+
+@keyframes mymove {
+  50% {opacity: 0;}
+}
+</style>
+</head>
+<body>
+
+<h1>Animation of opacity</h1>
+
+<p>The opacity property is <em>animatable</em> in CSS.</p>
+<p><b>Note:</b> CSS Animations do not work in Internet Explorer 9 and earlier versions.</p>
+
+<p>Change the opacity of the blue DIV element from 1 to 0, and back to 1:<p>
+
+<div id="DIV2">
+  <h1>Voila!</h1>
+</div>
+
+<div id="myDIV">
+</div>
+
+DA VUELTAS 180G
+
+<style> 
+#myDIV {
+  margin: auto;
+  border: 1px solid black;
+  width: 200px;
+  height: 100px;
+  background-color: coral;
+  color: white;
+  animation: mymove 5s infinite;
+}
+
+@keyframes mymove {
+  50% {transform: rotate(180deg);}
+}
+</style>
+</head>
+<body>
+
+<h1>Animation of transform</h1>
+
+<p>Gradually rotate the DIV element 180 degrees, and back:<p>
+
+<div id="myDIV">
+  <h1>myDIV</h1>
+</div>
+
+<p><strong>Note:</strong> CSS Animations do not work in Internet Explorer 9 and earlier versions.</p>
+
+VISIBILIDAD
+
+h2.a {
+  visibility: visible;
+}
+
+h2.b {
+  visibility: hidden;
+}
+
+OBJETOS DRAGABLES
+<style>
+.droptarget {
+  float: left; 
+  width: 100px; 
+  height: 35px;
+  margin: 15px;
+  padding: 10px;
+  border: 1px solid #aaaaaa;
+}
+</style>
+</head>
+<body>
+
+<p>Drag the p element back and forth between the two rectangles:</p>
+
+<div class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)">
+  <p ondragstart="dragStart(event)" ondrag="dragging(event)" draggable="true" id="dragtarget">Drag me!</p>
+</div>
+
+<div class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+<p style="clear:both;" id="demo"></p>
+
+<script>
+function dragStart(event) {
+  event.dataTransfer.setData("Text", event.target.id);
+}
+
+function dragging(event) {
+  document.getElementById("demo").innerHTML = "The p element is being dragged";
+}
+
+function allowDrop(event) {
+  event.preventDefault();
+}
+
+function drop(event) {
+  event.preventDefault();
+  var data = event.dataTransfer.getData("Text");
+  event.target.appendChild(document.getElementById(data));
+  document.getElementById("demo").innerHTML = "The p element was dropped";
+}
+</script>
+
+</body>
+
+CUANDO LO TOCA EL MOUSE SE AGRANDA UN POCO
+
+<img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" src="smiley.gif" alt="Smiley" width="32" height="32">
+
+<p>The function bigImg() is triggered when the user mouse over the image. This function enlarges the image.</p>
+<p>The function normalImg() is triggered when the mouse pointer is moved out of the image. That function sets the height and width of the image back to normal.</p>
+
+<script>
+function bigImg(x) {
+  x.style.height = "64px";
+  x.style.width = "64px";
+}
+
+function normalImg(x) {
+  x.style.height = "32px";
+  x.style.width = "32px";
+}
+</script>
+
+ONCLIK
+
+<button onclick="myFunction()">Click me</button>
+
+<p id="demo"></p>
+
+<p>A function is triggered when the button is clicked. The function outputs some text in a p element with id="demo".</p>
+
+<script>
+function myFunction() {
+  document.getElementById("demo").innerHTML = "Hello World";
+}
+</script>
+
+ALERT CUANDO ENTRAS A UNA PAGINA
+
+<body onpageshow="myFunction()">
+
+<h1>Hello World!</h1>
+
+<script>
+function myFunction() {
+  alert("Welcome!");
+}
+</script>
+
