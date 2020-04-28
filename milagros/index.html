@@ -4,6 +4,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&family=Sacramento&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/ba1f2bfbe7.js" crossorigin="anonymous"></script>
     <!-- Bootstrap CSS -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
@@ -12,7 +13,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Milagros Ceballos</title>
   <style>
-    
+   #thumbnail{
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  } 
   .fa {
   padding: 15px 10px 10px 10px;
   text-align: center;
@@ -43,13 +46,23 @@ h1, h2, h3, h4, h5{
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+#title{
+  font-family: 'Sacramento', cursive;
+  font-size: 80px;
+}
+
+#title2{
+  font-family: 'Poiret One', cursive;
+  font-size: 50px;
+}
+
   </style>
   </head>
   
     <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
 
    <div class="container text-center my-5" style="color:blueviolet">
-       <p class="display-4">Milagros Ceballos</p>
+       <p id="title">Milagros Ceballos</p>
        <h4 class="lead"><b>Mi Vida Con Parkinson</b></h4>
    </div>     
 
@@ -74,12 +87,13 @@ h1, h2, h3, h4, h5{
               </li>
           </ul>          
         </div>
+      </nav>
    </div> <!----End menu--->
 
   <div class="container">
     <div class="row">
       <div class="col-md-8">
-        <div class="card" style="width:auto;">
+        <div class="card" style="width:auto;" id="thumbnail">
             <div class="card-header" style="background-color: #FFE4C4;">
                 <img src="img/portada.jpg" class="card-img-top img-fluid" alt="...">
               <h4 class="text-center pt-3">Presentación</h4>
@@ -108,8 +122,8 @@ h1, h2, h3, h4, h5{
           </div>              
       </div> 
 
-      <div class="col-md-4 mt-3">
-        <div class="card" style="width:auto;">
+      <div class="col-md-4 mt-3" >
+        <div class="card" style="width:auto;" id="thumbnail">
           <img src="img/parkinson.jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Fundacion Dominicana Contra el mal de Parkinson</h5>
@@ -121,7 +135,7 @@ h1, h2, h3, h4, h5{
         </div>
         <div class="row">
           <div class="col-md-12 mt-3">
-            <div class="card" style="width:auto;">
+            <div class="card" style="width:auto;"id="thumbnail">
               <img src="img/biblia.jpg" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Ayuda Espiritual</h5>
@@ -149,13 +163,13 @@ h1, h2, h3, h4, h5{
  <br>
  <hr>
  <div class="container-fluid  text-center pb-3 my-3" id="interes">
-    <h3 class="text-muted">Informacion de Interes</h3> 
+    <h3 class="text-muted" id="title2">Informacion de Interes</h3> 
  <hr>   
  </div>
  <div class="container">
     <div class="row">
        <div class="col-12 col-md-4 mt-5 mt-md-5">
-          <div class="card">
+          <div class="card" id="thumbnail">
             <img src="img/apoyo.jpg" class="card-img-top" alt="..."style="width:auto;">
             <div class="card-body">
               <h5 class="card-title">Depresion</h5>
@@ -165,7 +179,7 @@ h1, h2, h3, h4, h5{
           </div>
         </div>
           <div class="col-12 col-md-4 mt-5 mt-md-5">
-            <div class="card">
+            <div class="card" id="thumbnail">
               <img src="img/kyani2.jpg" class="card-img-top" alt="..." style="width:auto;">
               <div class="card-body">
                 <h5 class="card-title">Suplementos Alimenticios</h5>
@@ -177,7 +191,7 @@ h1, h2, h3, h4, h5{
           </div> 
 
           <div class="col-12 col-md-4 mt-5 mt-md-5">
-            <div class="card">
+            <div class="card" id="thumbnail">
               <img src="img/mejorarvida.jpg" class="card-img-top" alt="..." style="width:auto;">
               <div class="card-body">
                 <h5 class="card-title">Apoyo Familiar</h5>
@@ -191,8 +205,8 @@ h1, h2, h3, h4, h5{
     
     <div class="container mt-5">
       <div class="row">
-         <div class="col-12 col-md-4 mt-md-5" >
-          <div class="card">
+         <div class="col-12 col-md-4 mt-md-5">
+          <div class="card" id="thumbnail">
             <img src="img/ejercicio2.jpg" class="card-img-top" alt="..." style="width:auto;">
             <div class="card-body">
               <h5 class="card-title">Ejercicios</h5>
@@ -203,8 +217,8 @@ h1, h2, h3, h4, h5{
          </div>
 
          <div class="col-12 col-md-4 mt-5 mt-md-5"> <!--dopa-->
-          <div class="card">
-                <img src="img/dopamina.jpg" class="card-img-top" alt="..." style="width:auto;">
+          <div class="card" id="thumbnail">
+                <img src="img/dopamina.jpg" class="card-img-top img-fluid" alt="..." >
               <div class="card-body">
                 <h5 class="card-title">Alimentacion</h5>
                 <p class="card-text">Hay que tener en cuenta en los pacientes con la enfermedad de Parkinson que toman levodopa que los aminoácidos neutros y la levodopa compiten en su absorción a nivel del intestino delgado y barrera hematoencefálica.</p>
@@ -215,7 +229,7 @@ h1, h2, h3, h4, h5{
          </div>  
                 
           <div class="col-12 col-md-4 mt-5 mt-md-5">
-            <div class="card">
+            <div class="card" id="thumbnail">
               <img src="img/respiracion.jpg" class="card-img-top" alt="..." style="width:auto;">
               <div class="card-body">
                 <h5 class="card-title">La Respiración</h5>
@@ -247,7 +261,7 @@ h1, h2, h3, h4, h5{
  <br>
  <hr>
  <div class="container-fluid  text-center pb-3 my-3" id="contacto">
-    <h3 class="text-muted">Contacto</h3> 
+    <h3 class="text-muted" id="title2">Contacto</h3> 
  <hr>   
  </div>
  <div class="container text-center">
