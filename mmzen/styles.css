@@ -1,0 +1,217 @@
+:root{
+    --fs--primary:60px;
+    --fs--secundary: 30px;
+    --fs--base:45px;
+}
+
+body {
+    background: url("img/body-mmzen.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    font-weight: 600;
+}
+/*texto animado*/
+
+
+header {
+    width: 100%;
+    height: 600px;
+    background: #AA076B;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #61045F, #AA076B);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #61045F, hsla(323, 42%, 6%, 0.274)), url("img/portada2.jpg") fixed top no-repeat; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+}
+nav{ font-family: 'Tangerine', cursive;}
+          
+nav a {
+    font-family: 'Tangerine', cursive;
+    font-size: 33px;
+    color: white;
+    font-weight: 800;
+}
+nav li{
+    color: white;
+}
+.languaje{
+    width: 50px;
+    border-radius: 50%;
+}
+.languaje :hover{cursor: pointer;}
+
+header .portada{margin-left: 220px;}
+
+.servicios h4{
+    font-family: 'Tangerine', cursive;
+    font-size: var(--fs--base);
+    color: #AA076B;
+}
+span {
+    font-family: 'Tangerine', cursive;
+    font-size: var(--fs--secundary);
+    color: white;   }
+
+.ml6 span{
+    position: relative;
+    font-weight: 900;
+    font-size: 70px;
+    }
+
+.ml6 .text-wrapper {
+    position: relative;
+    display: inline-block;
+    padding-top: 0.2em;
+    padding-right: 0.05em;
+    padding-bottom: 0.1em;
+    overflow: hidden;
+    }
+
+.ml6 .letter {
+    display: inline-block;
+    line-height: 1em;
+    }
+    h3{font-size: var(--fs--secundary);}
+    .titulos h2 {
+        font-family:'Tangerine', cursive;
+        font-size: var(--fs--primary);
+        color:  #AA076B;
+        font-weight: 800;
+    }
+    
+    .presentacion h5{
+        font-family: 'Tangerine', cursive;
+        font-size: 30px;
+        color: #AA076B;
+    }
+/*text*/
+
+.buttons .btnlight {
+    font-size: 20px;
+    width: 180px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    background-color: #AA076B;
+    color: white;
+}
+
+.buttons .btn-outline-light {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    width: 180px;
+}
+
+
+
+.lg {
+    display: inline;
+}
+.bb {
+    position: relative;
+    color: black;
+    text-align: center;
+    font-family: 'Tangerine', cursive;
+    z-index: 100;
+    display: block;
+
+}
+.bb h1 {
+    font-size: 80px;
+}
+.bb h2 {
+    font-size: 30px;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: rgba(192, 0, 134, 0.781);
+    width: 100%;
+    height: 0;
+    transition: 0.5s esay;
+    overflow: hidden;
+}
+
+.overlay h2 {
+    color: #fff;
+    font-size: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+.imagen {
+    position: relative;
+}
+.imagen:hover .overlay {
+    height: 100%;
+    cursor: pointer;
+}
+.buttons .boton{ 
+    background-color: #AA076B;
+    color: white;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.image{
+        transform: rotate(-20deg);
+    }
+.fab{ color: #AA076B; }
+/*footer*/
+.contact li {
+    text-decoration: none;
+    color: black;
+    font-size: 35px;
+    font-family: 'Tangerine', cursive;
+}
+.contact {
+    color: black;
+}
+
+p{font-size: 17px;}
+
+.logo {
+    width: 100px;
+}
+
+/*media query*/
+
+
+
+footer{
+        text-align: center;
+        padding: 15px;
+        background-color:#AA076B;
+        color: white;
+    }
+@media screen and (max-width: 700px) {
+    header{height: 700px;}
+
+    header .portada{margin-left: 0px;}
+
+    nav{visibility: hidden;}
+
+    .portada{text-align: center;}
+    
+    .ml6 span{
+      font-size: 50px;
+    }
+    .buttons{padding: 15px;}
+    .buttons .btn-outline-light{margin-top: 15px;}
+
+    .bb h2 {
+        font-size: 20px;
+    }
+    
+    .bb {
+        margin-top: 20px;
+    }
+    .lead {
+        font-size: 20px;
+    }
+    .logo{width: 70px;}
+    
+    .image{transform: rotate(0); text-align: center;}
+}        
