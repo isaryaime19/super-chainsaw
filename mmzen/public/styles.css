@@ -36,6 +36,12 @@ nav a {
 nav li{
     color: white;
 }
+
+.nav2{
+    visibility: hidden;
+    z-index: 100;
+    background-color: #AA076B;
+}
 .languaje{
     width: 50px;
     border-radius: 50%;
@@ -68,6 +74,10 @@ header .portada{margin-left: 220px;}
     font-size: 20px;
     width: 180px;
 }
+
+button{
+    font-family:var(--ff-secundary); 
+}
 /*.servicios{
     background-color: #fff;
     padding-bottom: 20px;
@@ -77,6 +87,12 @@ header .portada{margin-left: 220px;}
     font-size: var(--fs--base);
     color: #AA076B;
    
+}
+
+.card{
+    padding-bottom: 10px;
+    margin-bottom: 50px;
+
 }
 .purple{
     color: white;
@@ -168,6 +184,9 @@ span {
 .image{
         transform: rotate(-20deg);
     }
+.imagenes{
+    width: 800px;
+}    
 .fab{ color: #AA076B; }
 /*footer*/
 .contact li {
@@ -176,8 +195,17 @@ span {
     font-size: 35px;
     font-family: 'Tangerine', cursive;
 }
+
+#Regels{
+    text-align: justify;
+}
 .contact {
     color: black;
+}
+
+.contact span{
+    color: #AA076B;
+    font-size: 35px;
 }
 
 p{font-size: 17px;}
@@ -189,7 +217,6 @@ p{font-size: 17px;}
 /*media query*/
 
 
-
 footer{
         text-align: center;
         padding: 15px;
@@ -197,16 +224,24 @@ footer{
         color: white;
         }
 @media screen and (max-width: 700px) {
-    body {
-        background:violet;
-    }
+    section{
+        background:#e7bdd7;
+        }
 
     header{height: 700px;}
 
     header .portada{margin-left: 0px;}
 
-    nav{visibility: hidden;}
-   
+    .nav1{        
+        visibility: hidden;
+    }
+
+    .nav2{
+        visibility: visible;
+    }
+    footer{
+        visibility: hidden;
+    }
     .portada{text-align: center;}
     
     .ml6 span{
@@ -221,4 +256,5 @@ footer{
     .logo{width: 180px;}
     
     .image{transform: rotate(0); text-align: center;}
+    
 }        
