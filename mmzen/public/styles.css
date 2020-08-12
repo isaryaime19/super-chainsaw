@@ -4,7 +4,7 @@
     --fs--primary:60px;
     --fs--secundary: 30px;
     --fs--base:45px;
-    --fs--na:40px;
+    --fs--na:18px;
     --bg--transp: hsla(300, 22%, 92%, 0.719);
 }
 
@@ -26,15 +26,33 @@ header {
     background-size: cover;
     position: relative;     
 }
-nav{ font-family:var(--ff--primary);}
+.idioma{
+    background-color: #AA076B;
+    text-align: right;
+    color: #fff;      
+}
+
+.idioma img{
+    margin-left: 10px;
+}
+.idioma p{
+    display: inline;
+       
+}
+
+nav{ font-family:var(--ff--secundary);
+background-color: #fff;
+}
+.portada{background-color: white;}
           
 nav a {
-    font-family:var(--ff--primary);
+    font-family:var(--ff--secundary);
     font-size: var(--fs--na);
-    color: white;
+   
 }
-nav li{
-    color: white;
+
+nav li :hover {
+    background-color:#e7bdd7;    
 }
 
 .nav2{
@@ -43,12 +61,12 @@ nav li{
     background-color: #AA076B;
 }
 .languaje{
-    width: 50px;
+    width: 30px;
     border-radius: 50%;
 }
 .languaje :hover{cursor: pointer;}
 
-header .portada{margin-left: 220px;}
+/*header .portada{margin-left: 220px;}*/
 
 .bb {
     position: relative;
@@ -60,6 +78,20 @@ header .portada{margin-left: 220px;}
 .bb h1 {
     font-size: 80px;
 }
+
+.bb1 {
+    position: relative;
+    margin-top: 100px;
+    color: black;
+    text-align: center;
+    font-family: var(--ff--primary);
+    display: block;
+}
+
+.bb1 h1 {
+    font-size: 80px;
+}
+
 
 .buttons .btnlight {
     font-size: 20px;
@@ -211,7 +243,7 @@ span {
 p{font-size: 17px;}
 
 .logo {
-    width: 100px;
+    width: 80px;
 }
 
 /*media query*/
@@ -223,6 +255,7 @@ footer{
         background-color:#AA076B;
         color: white;
         }
+
 @media screen and (max-width: 700px) {
     section{
         background:#e7bdd7;
@@ -232,16 +265,7 @@ footer{
 
     header .portada{margin-left: 0px;}
 
-    .nav1{        
-        visibility: hidden;
-    }
-
-    .nav2{
-        visibility: visible;
-    }
-    footer{
-        visibility: hidden;
-    }
+    
     .portada{text-align: center;}
     
     .ml6 span{
@@ -253,7 +277,7 @@ footer{
     .lead {
         font-size: 20px;
     }
-    .logo{width: 180px;}
+    .logo{width: 60px;}
     
     .image{transform: rotate(0); text-align: center;}
     
